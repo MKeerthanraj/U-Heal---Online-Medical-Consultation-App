@@ -34,17 +34,17 @@ It’s an Online Mobile Consultation App, with the motto to connect patients wit
 ## 1. "anim" Folder
 Contains several animation files that are used on the Front End of the application.
 
-## 2. "drawable" Folder
+## 2. "drawable and drawable-v24" Folder
 Contains xml files of several SVG icons used on the Front End of the application.
 
 ## 3. "layout" Folder
 Contains xml files of all layouts linked to the Backend java files.
 
-## 4. "medicalconsultation" Folder
-Contains each and every java file used in the Backend of the application.
-
-## 5. "values" Folder
+## 4. "values" Folder
 Contains "colors.xml" "strings.xml" "styles.xml" which define basic Frontend layout of the whole application.
 
-## 6. "U-Heal.apk" File
+## 5. "U-Heal.apk" File
 It is the final debugged apk file which can be installed on a mobile to run the App.
+
+## 6. Remaining Folders
+They contain all the java files used in the Backend of the App.
