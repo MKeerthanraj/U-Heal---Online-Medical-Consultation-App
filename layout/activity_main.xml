@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/home_bg_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <ImageView
+                android:id="@+id/ProfilePicImageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_user_profile_pic"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="15dp"/>
+
+            <TextView
+                android:id="@+id/UserFullNameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="27dp"
+                android:textColor="#9595FF"
+                android:text="dummy"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/ProfilePicImageView"/>
+
+            <LinearLayout
+                android:id="@+id/UserInfoLinearLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/UserFullNameText"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/UserGenderText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_reg"
+                    android:text="gender"
+                    android:textSize="18dp"
+                    android:textColor="#000000"
+                    android:padding="5dp"/>
+
+                <TextView
+                    android:id="@+id/UserAgeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/quicksand_reg"
+                    android:text="18 yrs"
+                    android:textSize="18dp"
+                    android:padding="5dp"
+                    android:textColor="#000000"/>
+
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#707070"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/UserInfoLinearLayout"
+                android:layout_margin="10dp"/>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/UserStuffLinearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:gravity="center"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line1"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/YourAppointmentsButton"
+                    android:onClick="yourAppointmentsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/green_button_bg"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:drawableTop="@drawable/ic_your_appointments"
+                    android:padding="10dp"
+                    android:elevation="5dp"
+                    android:textSize="16sp"
+                    android:text="Your\nAppointments"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:layout_marginRight="5dp"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@+id/YourPrescriptionButton"/>
+
+                <Button
+                    android:id="@+id/YourPrescriptionButton"
+                    android:onClick="YourPrescriptionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/green_button_bg"
+                    android:drawableTop="@drawable/ic_your_prescription"
+                    android:foreground="?attr/selectableItemBackgroundBorderless"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:paddingRight="10dp"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:elevation="5dp"
+                    android:layout_marginLeft="5dp"
+                    android:textSize="16sp"
+                    android:text="Your\nPrescriptions"
+                    android:textColor="#ffffff"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/quicksand_bold"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintLeft_toRightOf="@id/YourAppointmentsButton"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#707070"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/UserStuffLinearLayout"
+                android:layout_margin="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line2"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+                <Button
+                    android:id="@+id/BookAppointmentButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_long_button_round"
+                    android:elevation="5dp"
+                    android:padding="15dp"
+                    android:drawableLeft="@drawable/ic_book_appointment"
+                    android:text="Book Appointment"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <Button
+                    android:id="@+id/CheckSymptomButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_long_button_round"
+                    android:elevation="5dp"
+                    android:padding="15dp"
+                    android:onClick="checkSymptomButton"
+                    android:drawableLeft="@drawable/ic_check_symptom"
+                    android:text="Check symptom"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"/>
+
+                <Button
+                    android:id="@+id/SearchMedicineButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/home_long_button_round"
+                    android:elevation="5dp"
+                    android:padding="15dp"
+                    android:onClick="SearchMedicine"
+                    android:drawableLeft="@drawable/ic_search_medicine"
+                    android:text="Search Medicine"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginBottom="20dp"/>
+
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

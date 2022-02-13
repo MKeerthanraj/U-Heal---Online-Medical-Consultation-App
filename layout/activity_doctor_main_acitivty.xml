@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DoctorPages.DoctorMainAcitivty"
+    android:background="@drawable/home_bg_color">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+        <ImageView
+            android:id="@+id/ProfilePicImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_user_profile_pic"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"/>
+
+        <TextView
+            android:id="@+id/DocNameText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/quicksand_bold"
+            android:textSize="27dp"
+            android:textColor="#9595FF"
+            android:text="dummy"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ProfilePicImageView"/>
+
+        <LinearLayout
+            android:id="@+id/UserInfoLinearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/DocNameText"
+            android:layout_marginTop="10dp">
+
+            <TextView
+                android:id="@+id/DocGenderText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_reg"
+                android:text="gender"
+                android:textSize="18dp"
+                android:textColor="#000000"
+                android:padding="5dp"/>
+
+            <TextView
+                android:id="@+id/DocAgeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_reg"
+                android:text="18 yrs"
+                android:textSize="18dp"
+                android:padding="5dp"
+                android:textColor="#000000"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#707070"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/UserInfoLinearLayout"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/DocInfoLinearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/line1"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/DocSpecText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Specialization"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksand_reg"
+                android:textColor="#363636"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/DocExpText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Experience"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksand_reg"
+                android:textColor="#363636"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/DocCurrentPracticeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Currently Practicing at :\nApollo "
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksand_reg"
+                android:textColor="#363636"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/DocDegreeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Degree : MBBS"
+                android:gravity="center"
+                android:fontFamily="@font/quicksand_reg"
+                android:textColor="#363636"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#585858"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"/>
+
+
+        </LinearLayout>
+
+
+            <Button
+                android:id="@+id/YourAppointmentsButton"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/DocInfoLinearLayout"
+                android:layout_marginRight="20sp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20sp"
+                android:layout_marginTop="20dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/ic_blue_button_bg"
+                android:drawableTop="@drawable/ic_your_appointments"
+                android:text="Your\nAppointments"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/quicksand_bold"
+                android:paddingLeft="5dp"
+                android:paddingTop="10dp"
+                android:paddingBottom="5dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

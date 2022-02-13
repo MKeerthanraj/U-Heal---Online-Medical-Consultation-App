@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:paddingBottom="15dp"
+    android:paddingTop="15dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:foreground="?attr/selectableItemBackgroundBorderless"
+    android:focusable="true"
+    app:cardCornerRadius="10dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:elevation="5dp"
+    android:clickable="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/IssueNameText"
+            android:paddingBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:fontFamily="@font/quicksand_bold"
+            android:text="Issue Name : "
+            android:textSize="25dp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:id="@+id/SymptomNameText"
+            android:paddingBottom="5dp"
+            android:gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Symptom Name : "
+            android:fontFamily="@font/quicksand_bold"
+            android:textSize="18dp"
+            android:textColor="#EEECEC"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Specializations :"
+            android:fontFamily="@font/quicksand_reg"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:textColor="#ffffff"/>
+
+        <TextView
+            android:gravity="center_horizontal"
+            android:id="@+id/SpecText"
+            android:fontFamily="@font/quicksand_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:textColor="#EEECEC"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

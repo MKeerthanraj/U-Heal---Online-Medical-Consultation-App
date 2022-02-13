@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg_color"
+    tools:context=".YourAppointmentsPages.YourAppointmentsSelectedAppActivity">
+
+    <ProgressBar
+        android:id="@+id/Progress"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:elevation="6dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <FrameLayout
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:padding="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/green_button_bg">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/ic_blue_button_bg"/>
+
+            </FrameLayout>
+
+            <TextView
+                android:layout_marginTop="30dp"
+                android:id="@+id/DocNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="DocName"
+                android:textColor="#000000"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="28sp"
+                android:gravity="center"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#585858"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <TextView
+                android:id="@+id/DocSpecText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Specialization"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksand_reg"
+                android:textColor="#363636"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/DocGenderText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Gender"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksand_reg"
+                android:textColor="#363636"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/DocExpText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Experience"
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksand_reg"
+                android:textColor="#363636"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/DocCurrentPracticeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Currently Practicing at :\nApollo "
+                android:gravity="center"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/quicksand_reg"
+                android:textColor="#363636"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/DocDegreeText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Degree : MBBS"
+                android:gravity="center"
+                android:fontFamily="@font/quicksand_reg"
+                android:textColor="#363636"
+                android:textSize="18sp"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#585858"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Time Slot :"
+                    android:textSize="21sp"
+                    android:gravity="center"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/TimeSlotText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/ic_button_stroke_bg"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:paddingBottom="5dp"
+                android:paddingTop="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Date :"
+                    android:gravity="center"
+                    android:textSize="21sp"
+                    android:layout_marginRight="10dp"
+                    android:fontFamily="@font/quicksand_bold"
+                    android:textColor="#000000"/>
+
+                <TextView
+                    android:id="@+id/SelectedDateText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:gravity="center"
+                    android:text="dd/mm/yyyy"
+                    android:background="@drawable/ic_button_stroke_bg"
+                    android:paddingRight="10dp"/>
+
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/MeetLinkButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Open GMeet Link"
+                android:onClick="meetLinkButton"
+                android:drawableLeft="@drawable/ic_google_meet_logo"
+                android:background="#F2F2F2"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="#585858"
+                android:fontFamily="@font/quicksand_bold"
+                android:padding="10dp"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"/>
+
+            <Button
+                android:id="@+id/YourPrescriptionButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Your Prescription"
+                android:onClick="yourPrescriptionButton"
+                android:drawableLeft="@drawable/ic_your_prescription"
+                android:background="@drawable/ic_blue_button_bg"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:textColor="#ffffff"
+                android:fontFamily="@font/quicksand_bold"
+                android:padding="10dp"
+                android:drawablePadding="10dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"/>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

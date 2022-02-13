@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChemistPages.ChemistUpdateStockActivity"
+    android:background="@drawable/home_bg_color">
+
+    <ProgressBar
+        android:id="@+id/Progress"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:elevation="6dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:visibility="gone"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_height="match_parent"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/UpdateMedicineText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Update Medicine Stock"
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="25dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="15dp"/>
+
+            <EditText
+                android:id="@+id/MedicineNameEdit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Name of Medicine"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/UpdateMedicineText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"/>
+
+            <Spinner
+                android:id="@+id/AvailabilitySpinnerMain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/UpdateMedicineText"
+                app:layout_constraintRight_toLeftOf="@id/AddMedicineButton"
+                android:layout_marginRight="5dp"
+                android:gravity="center"
+                android:layout_marginTop="15dp"/>
+
+            <Button
+                android:id="@+id/AddMedicineButton"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:background="@drawable/ic_book_appointment"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/UpdateMedicineText"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="25dp"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/MedicineNameEdit"
+                app:layout_constraintBottom_toTopOf="@id/SaveDataButton"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/StockListLinearLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:padding="5dp">
+
+                </LinearLayout>
+
+            </ScrollView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/SaveDataButton"
+                android:background="@drawable/ic_blue_button_bg"
+                android:foreground="?attr/selectableItemBackgroundBorderless"
+                android:clickable="true"
+                android:focusable="true"
+                android:elevation="5dp"
+                android:onClick="SaveData"
+                android:enabled="false"
+                android:text="Save Changes"
+                android:textColor="#ffffff"
+                android:textAllCaps="false"
+                android:fontFamily="@font/quicksand_bold"
+                android:padding="10dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:layout_marginBottom="15dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/home_bg_color"
+    tools:context=".SymptomCheckerPages.SymptomCheckerIssueDiagActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="5dp"
+        app:cardCornerRadius="15dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_margin="20dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/IssueNameText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Issue Name : "
+                android:fontFamily="@font/quicksand_bold"
+                android:textSize="25sp"
+                android:elevation="5dp"
+                android:textColor="#585858"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_margin="20dp"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:paddingRight="10dp"
+                android:paddingLeft="10dp"/>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                app:layout_constraintTop_toBottomOf="@id/IssueNameText"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:elevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Possible Symptoms"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:textSize="25sp"
+                        android:textColor="#585858"
+                        android:padding="10dp"/>
+
+                    <TextView
+                        android:id="@+id/symptomsText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Symptoms Here"
+                        android:fontFamily="@font/quicksand_reg"
+                        android:textColor="#636363"
+                        android:textSize="15sp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#c0c0c0"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Short-Description"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:textSize="25sp"
+                        android:textColor="#585858"
+                        android:padding="10dp"/>
+
+                    <TextView
+                        android:id="@+id/descriptionText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Description Here"
+                        android:fontFamily="@font/quicksand_reg"
+                        android:textColor="#636363"
+                        android:textSize="15sp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#c0c0c0"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Medical Condition"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:textColor="#585858"
+                        android:textSize="25sp"
+                        android:padding="10dp"/>
+
+                    <TextView
+                        android:id="@+id/medicalCondText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Medical Condition Here"
+                        android:fontFamily="@font/quicksand_reg"
+                        android:textColor="#636363"
+                        android:textSize="15sp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"/>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="#c0c0c0"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="20dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Treatment Description"
+                        android:fontFamily="@font/quicksand_bold"
+                        android:textColor="#585858"
+                        android:textSize="25sp"
+                        android:padding="10dp"/>
+
+                    <TextView
+                        android:id="@+id/treatmentDescriptionText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Treatment Description Here"
+                        android:fontFamily="@font/quicksand_reg"
+                        android:textColor="#636363"
+                        android:textSize="15sp"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="10dp"/>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
