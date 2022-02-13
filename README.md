@@ -46,8 +46,5 @@ Contains each and every java file used in the Backend of the application.
 ## 5. "values" Folder
 Contains "colors.xml" "strings.xml" "styles.xml" which define basic Frontend layout of the whole application.
 
-## 6. "MEDAPP DEMO.mp4" File
-It is a video demo of the working of the app.
-
-## 7. "U-Heal.apk" File
+## 6. "U-Heal.apk" File
 It is the final debugged apk file which can be installed on a mobile to run the App.
