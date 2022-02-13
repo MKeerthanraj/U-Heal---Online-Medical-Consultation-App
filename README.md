@@ -22,3 +22,29 @@ It’s an Online Mobile Consultation App, with the motto to connect patients wit
 3. PHARMACY
 - REGISTRATION
 - MANAGE STOCKS
+
+# Project Modules
+
+## 1. "anim" Folder
+Contains several animation files that are used on the Front End of the application.
+
+## 2. "drawable" Folder
+Contains xml files of several SVG icons used on the Front End of the application.
+
+## 3. "layout" Folder
+Contains xml files of all layouts linked to the Backend java files.
+
+## 4. "medicalconsultation" Folder
+Contains each and every java file used in the Backend of the application.
+
+## 5. "values" Folder
+Contains "colors.xml" "strings.xml" "styles.xml" which define basic Frontend layout of the whole application.
+
+## 6. "AndroidManifest.xml" File
+It is the Android Manifest file.
+
+## 7. "MEDAPP DEMO.mp4" File
+It is a video demo of the working of the app.
+
+## 8. "app-debug.apk" File
+It is the final debugged apk file which can be installed on a mobile to run the App.
